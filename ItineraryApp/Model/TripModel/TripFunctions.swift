@@ -13,6 +13,7 @@ class TripFunctions{
         
     }
     static func readTrips(){
+       
         if Data.tripModels.count == 0{
             Data.tripModels.append(TripModel(title:"Trip to Bali!"))
             Data.tripModels.append(TripModel(title:"Mexico"))

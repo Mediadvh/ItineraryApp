@@ -11,6 +11,8 @@
 		AD5FCE0624F4059C00067B36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FCE0524F4059C00067B36 /* SceneDelegate.swift */; };
 		AD5FCE0D24F4059E00067B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5FCE0C24F4059E00067B36 /* Assets.xcassets */; };
 		AD5FCE1024F4059E00067B36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5FCE0E24F4059E00067B36 /* LaunchScreen.storyboard */; };
+		ADC68B7324FD588500A565EF /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7224FD588500A565EF /* TripModel.swift */; };
+		ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7424FD589900A565EF /* TripFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		AD5FCE0C24F4059E00067B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5FCE0F24F4059E00067B36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD5FCE1124F4059E00067B36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC68B7224FD588500A565EF /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		ADC68B7424FD589900A565EF /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		AD5FCE0224F4059C00067B36 /* ItineraryApp */ = {
 			isa = PBXGroup;
 			children = (
+				ADC68B7024FD585B00A565EF /* Model */,
 				AD5FCE0324F4059C00067B36 /* AppDelegate.swift */,
 				AD5FCE0524F4059C00067B36 /* SceneDelegate.swift */,
 				AD5FCE0C24F4059E00067B36 /* Assets.xcassets */,
@@ -59,6 +64,23 @@
 				AD5FCE1124F4059E00067B36 /* Info.plist */,
 			);
 			path = ItineraryApp;
+			sourceTree = "<group>";
+		};
+		ADC68B7024FD585B00A565EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADC68B7124FD586300A565EF /* TripModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADC68B7124FD586300A565EF /* TripModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADC68B7224FD588500A565EF /* TripModel.swift */,
+				ADC68B7424FD589900A565EF /* TripFunctions.swift */,
+			);
+			path = TripModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +155,8 @@
 			files = (
 				AD5FCE0424F4059C00067B36 /* AppDelegate.swift in Sources */,
 				AD5FCE0624F4059C00067B36 /* SceneDelegate.swift in Sources */,
+				ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */,
+				ADC68B7324FD588500A565EF /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

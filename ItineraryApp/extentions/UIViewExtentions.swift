@@ -10,9 +10,7 @@ import UIKit
 
 extension  UIView {
 
-    
-    
-    func addShadowAndRoundedCorners(){
+     func addShadowAndRoundedCorners(){
         // changing the properties for the shadow
                
                // this is by default 0 we change it to 1 for the shadow to be visible

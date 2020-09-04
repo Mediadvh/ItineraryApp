@@ -10,16 +10,25 @@ import UIKit
 
 class AddTripViewController: UIViewController {
 
+    
     @IBOutlet weak var popUpView: UIView!
+   
     @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var tripTextField: UITextField!
+   
     @IBOutlet weak var cancelButton: UIButton!
+    
     @IBOutlet weak var saveButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        popUpView.backgroundColor = Theme.background
+        popUpView.addShadowAndRoundedCorners()
+        
+        
     }
     
 

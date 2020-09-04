@@ -62,7 +62,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="icons8-plus-3"/>
                                 <connections>
-                                    <segue destination="cXo-Xd-TxJ" kind="presentation" id="Go8-EJ-H8M"/>
+                                    <segue destination="LXE-by-OXH" kind="presentation" id="uwl-om-83R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,12 +85,12 @@
             <point key="canvasLocation" x="-655.07246376811599" y="-18.080357142857142"/>
         </scene>
         <!--AddTripViewController-->
-        <scene sceneID="hHj-7M-cBm">
+        <scene sceneID="MIN-u6-aRL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K8B-BN-ma5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewControllerPlaceholder storyboardName="AddTripViewController" id="cXo-Xd-TxJ" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AddTripViewController" id="LXE-by-OXH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sa-xk-URx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="-18"/>
+            <point key="canvasLocation" x="66.666666666666671" y="-18.080357142857142"/>
         </scene>
     </scenes>
     <resources>

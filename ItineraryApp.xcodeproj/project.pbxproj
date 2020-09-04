@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AD1787F324FFFC4E003FBB01 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1787F224FFFC4E003FBB01 /* TripsViewController.storyboard */; };
 		AD1787F725000076003FBB01 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1787F625000076003FBB01 /* TripsViewController.swift */; };
+		AD44EEEF2501E8CE005FD340 /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44EEEE2501E8CE005FD340 /* AddTripViewController.swift */; };
+		AD44EEF32501F0FE005FD340 /* AddTripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD44EEF22501F0FE005FD340 /* AddTripViewController.storyboard */; };
 		AD5FCE0424F4059C00067B36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FCE0324F4059C00067B36 /* AppDelegate.swift */; };
 		AD5FCE0624F4059C00067B36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5FCE0524F4059C00067B36 /* SceneDelegate.swift */; };
 		AD5FCE0D24F4059E00067B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5FCE0C24F4059E00067B36 /* Assets.xcassets */; };
@@ -17,6 +19,7 @@
 		AD7BC6F125013FC4004EEC2D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BC6F025013FC4004EEC2D /* Theme.swift */; };
 		AD7BC6F52501444A004EEC2D /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7BC6F42501444A004EEC2D /* Lobster-Regular.ttf */; };
 		AD7BC6F7250148E7004EEC2D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7BC6F6250148E7004EEC2D /* Colors.xcassets */; };
+		AD7BC6F92501D4E3004EEC2D /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BC6F82501D4E3004EEC2D /* FloatingActionButton.swift */; };
 		ADC68B7324FD588500A565EF /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7224FD588500A565EF /* TripModel.swift */; };
 		ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7424FD589900A565EF /* TripFunctions.swift */; };
 		ADC68B7724FD5D9300A565EF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7624FD5D9300A565EF /* Data.swift */; };
@@ -26,6 +29,8 @@
 /* Begin PBXFileReference section */
 		AD1787F224FFFC4E003FBB01 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		AD1787F625000076003FBB01 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		AD44EEEE2501E8CE005FD340 /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		AD44EEF22501F0FE005FD340 /* AddTripViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AddTripViewController.storyboard; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/AddTripViewController.storyboard"; sourceTree = "<group>"; };
 		AD5FCE0024F4059C00067B36 /* ItineraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItineraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5FCE0324F4059C00067B36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD5FCE0524F4059C00067B36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		AD7BC6F025013FC4004EEC2D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		AD7BC6F42501444A004EEC2D /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		AD7BC6F6250148E7004EEC2D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AD7BC6F82501D4E3004EEC2D /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		ADC68B7224FD588500A565EF /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		ADC68B7424FD589900A565EF /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		ADC68B7624FD5D9300A565EF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 		AD1787F024FFFC12003FBB01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD44EEEB2501E759005FD340 /* AddTripViewController */,
 				AD1787F124FFFC20003FBB01 /* TripsViewController */,
 			);
 			path = Views;
@@ -69,6 +76,15 @@
 				ADD0A8B42500490400C4BAFE /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
+			sourceTree = "<group>";
+		};
+		AD44EEEB2501E759005FD340 /* AddTripViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD44EEF22501F0FE005FD340 /* AddTripViewController.storyboard */,
+				AD44EEEE2501E8CE005FD340 /* AddTripViewController.swift */,
+			);
+			path = AddTripViewController;
 			sourceTree = "<group>";
 		};
 		AD5FCDF724F4059C00067B36 = {
@@ -107,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				AD7BC6E7250139D6004EEC2D /* UIViewExtentions.swift */,
+				AD7BC6F82501D4E3004EEC2D /* FloatingActionButton.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -198,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD7BC6F7250148E7004EEC2D /* Colors.xcassets in Resources */,
+				AD44EEF32501F0FE005FD340 /* AddTripViewController.storyboard in Resources */,
 				AD5FCE1024F4059E00067B36 /* LaunchScreen.storyboard in Resources */,
 				AD7BC6F52501444A004EEC2D /* Lobster-Regular.ttf in Resources */,
 				AD1787F324FFFC4E003FBB01 /* TripsViewController.storyboard in Resources */,
@@ -219,6 +237,8 @@
 				AD7BC6E8250139D6004EEC2D /* UIViewExtentions.swift in Sources */,
 				AD1787F725000076003FBB01 /* TripsViewController.swift in Sources */,
 				ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */,
+				AD44EEEF2501E8CE005FD340 /* AddTripViewController.swift in Sources */,
+				AD7BC6F92501D4E3004EEC2D /* FloatingActionButton.swift in Sources */,
 				ADD0A8B52500490400C4BAFE /* TripsTableViewCell.swift in Sources */,
 				ADC68B7324FD588500A565EF /* TripModel.swift in Sources */,
 			);

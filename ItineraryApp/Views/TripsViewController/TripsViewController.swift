@@ -10,6 +10,9 @@ import UIKit
 
 class TripsViewController: UIViewController{
 
+   
+    @IBOutlet weak var addButton: FloatingActionButton!
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -26,6 +29,11 @@ class TripsViewController: UIViewController{
             
         })
         view.backgroundColor = Theme.background
+        
+        
+        
+        
+        
     }
 }
 // you can also put this extension into a seperate file

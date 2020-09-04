@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="164" id="H1i-ud-MMa" customClass="TripsTableViewCell" customModule="ItineraryApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="164" id="H1i-ud-MMa" customClass="TripsTableViewCell" customModule="ItineraryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H1i-ud-MMa" id="Bjw-30-0dn">
@@ -55,6 +55,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvo-16-Zgv" customClass="FloatingActionButton" customModule="ItineraryApp" customModuleProvider="target">
+                                <rect key="frame" x="306" y="773" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="icons8-plus-3"/>
+                                <connections>
+                                    <segue destination="cXo-Xd-TxJ" kind="presentation" id="Go8-EJ-H8M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -66,6 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="979-Kg-ngO"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="gvo-16-Zgv" id="owe-NE-FLA"/>
                         <outlet property="tableView" destination="efk-TR-G7b" id="tHw-wk-RRD"/>
                     </connections>
                 </viewController>
@@ -73,5 +84,16 @@
             </objects>
             <point key="canvasLocation" x="-655.07246376811599" y="-18.080357142857142"/>
         </scene>
+        <!--AddTripViewController-->
+        <scene sceneID="hHj-7M-cBm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8B-BN-ma5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AddTripViewController" id="cXo-Xd-TxJ" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-18"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icons8-plus-3" width="24" height="24"/>
+    </resources>
 </document>

@@ -28,14 +28,26 @@ class TripsViewController: UIViewController{
             self?.tableView.reloadData()
             
         })
+        
         view.backgroundColor = Theme.background
-        
-        
-        
-        
-        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddTripSegue"
+        {
+            let popup = segue.destination as! AddTripViewController
+            popup.donesaving = {[weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    
+    
+    
 }
+
+
+
 // you can also put this extension into a seperate file
 extension TripsViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

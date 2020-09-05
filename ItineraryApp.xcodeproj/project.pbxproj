@@ -24,6 +24,7 @@
 		ADD8714725020D0A0019D9BB /* UIViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD8714625020D0A0019D9BB /* UIViewExtentions.swift */; };
 		ADD8714B25022B5B0019D9BB /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD8714A25022B5B0019D9BB /* FloatingActionButton.swift */; };
 		ADD8714D250232130019D9BB /* AddTripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD8714C250232130019D9BB /* AddTripViewController.storyboard */; };
+		ADD87151250260760019D9BB /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD87150250260760019D9BB /* AppUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		ADD8714625020D0A0019D9BB /* UIViewExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtentions.swift; sourceTree = "<group>"; };
 		ADD8714A25022B5B0019D9BB /* FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		ADD8714C250232130019D9BB /* AddTripViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripViewController.storyboard; sourceTree = "<group>"; };
+		ADD87150250260760019D9BB /* AppUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				ADD8714625020D0A0019D9BB /* UIViewExtentions.swift */,
 				ADD8714A25022B5B0019D9BB /* FloatingActionButton.swift */,
+				ADD87150250260760019D9BB /* AppUIButton.swift */,
 			);
 			path = extentions;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				AD5FCE0624F4059C00067B36 /* SceneDelegate.swift in Sources */,
 				AD1787F725000076003FBB01 /* TripsViewController.swift in Sources */,
 				ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */,
+				ADD87151250260760019D9BB /* AppUIButton.swift in Sources */,
 				AD44EEEF2501E8CE005FD340 /* AddTripViewController.swift in Sources */,
 				ADD0A8B52500490400C4BAFE /* TripsTableViewCell.swift in Sources */,
 				ADD8714B25022B5B0019D9BB /* FloatingActionButton.swift in Sources */,

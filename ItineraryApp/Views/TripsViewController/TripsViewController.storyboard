@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="efk-TR-G7b">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="efk-TR-G7b">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -30,6 +30,9 @@
                                                     <rect key="frame" x="20" y="13" width="374" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Z5-1uu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hu-HG-t4u">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="43"/>
@@ -39,7 +42,11 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.1883464158" green="0.19194230440000001" blue="0.20392349360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
+                                                        <constraint firstItem="YFp-Z5-1uu" firstAttribute="top" secondItem="MFv-BN-gNY" secondAttribute="top" id="37L-en-QEU"/>
                                                         <constraint firstAttribute="trailing" secondItem="0hu-HG-t4u" secondAttribute="trailing" id="Mab-2m-W1j"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YFp-Z5-1uu" secondAttribute="trailing" id="NW8-wS-gPh"/>
+                                                        <constraint firstAttribute="bottom" secondItem="YFp-Z5-1uu" secondAttribute="bottom" id="ZK8-bZ-vMp"/>
+                                                        <constraint firstItem="YFp-Z5-1uu" firstAttribute="leading" secondItem="MFv-BN-gNY" secondAttribute="leading" id="fzb-BJ-784"/>
                                                         <constraint firstItem="0hu-HG-t4u" firstAttribute="top" secondItem="MFv-BN-gNY" secondAttribute="top" id="hgP-ed-OFa"/>
                                                         <constraint firstItem="0hu-HG-t4u" firstAttribute="leading" secondItem="MFv-BN-gNY" secondAttribute="leading" id="idx-Fs-MZQ"/>
                                                         <constraint firstAttribute="bottom" secondItem="0hu-HG-t4u" secondAttribute="bottom" id="zGy-HF-zEV"/>
@@ -51,6 +58,7 @@
                                         <connections>
                                             <outlet property="cardView" destination="MFv-BN-gNY" id="BE4-l7-ing"/>
                                             <outlet property="titleLabel" destination="0hu-HG-t4u" id="iZA-xd-5ot"/>
+                                            <outlet property="tripImageView" destination="YFp-Z5-1uu" id="rFf-ND-AmY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

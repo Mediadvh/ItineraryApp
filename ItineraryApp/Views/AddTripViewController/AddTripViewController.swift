@@ -25,6 +25,7 @@
         @IBOutlet weak var imageView: UIImageView!
         
         var donesaving :(()->())?
+        var indexToEdit:Int?
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -43,6 +44,13 @@
             titleLabel.layer.shadowOffset = CGSize.zero
             titleLabel.layer.shadowColor = UIColor.white.cgColor
             titleLabel.layer.shadowRadius = 5
+            
+            if let index = indexToEdit {
+                let trip = Data.tripModels[index]
+                tripTextField.text = trip.title
+                imageView.image = trip.image
+                titleLabel.text = "Edit Trip"
+            }
         }
         
         // TODO: does it make a diffrence if we have set sender to AppUIButton
@@ -77,31 +85,41 @@
                 tripTextField.placeholder = "Invalid Input / Try Again"
                 return
             }
-            TripFunctions.creatTrip(tripModel: TripModel(title: newTripName,image: imageView.image))
             
+            if let index = indexToEdit{
+                TripFunctions.updateTrip(at: index, title: newTripName, image: imageView.image)
+            }
+            else{
+                TripFunctions.creatTrip(tripModel: TripModel(title: newTripName,image: imageView.image))
+                
+            }
+
             if let donesaving = donesaving{
                 donesaving()
             }
-            
-            
+
             dismiss(animated: true)
+            
         }
         
         fileprivate func presentPhotoPickerController() {
+            DispatchQueue.main.async {
+                
             let myPickerController = UIImagePickerController()
+            myPickerController.allowsEditing = true
             myPickerController.delegate = self
             myPickerController.sourceType = .photoLibrary
             
             
             
             self.present(myPickerController, animated: true)
+                
+            }
         }
         
         @IBAction func addPhoto(_ sender: UIButton) {
             
-            // we have to check for availability cause if the photo library is empty and we open it up,an error occurs
-            // TODO: do some diggin about main thread and check for the warnings
-            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            
                 DispatchQueue.main.async {
                     PHPhotoLibrary.requestAuthorization { (status) in
                         switch status{
@@ -157,12 +175,16 @@
         
         
         
-    }
+    
     
     extension AddTripViewController:UIImagePickerControllerDelegate , UINavigationControllerDelegate{
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
+                
+                self.imageView.image = image
+            }
+            else if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
                 
                 self.imageView.image = image
             }

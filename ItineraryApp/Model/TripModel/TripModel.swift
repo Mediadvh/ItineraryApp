@@ -7,14 +7,15 @@
 //
 
 import UIKit
-class TripModel{
-    var title:String
-    var ID:UUID
-    var image : UIImage?
+struct TripModel{
     
+    var title:String
+    var id:UUID
+    var image : UIImage?
+    var days = [DayModel]()
     init(title: String,image :UIImage? = nil) {
         
-        ID = UUID()
+        id = UUID()
         self.title = title
         self.image = image
     }

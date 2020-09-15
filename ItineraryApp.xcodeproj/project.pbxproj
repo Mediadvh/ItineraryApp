@@ -17,6 +17,9 @@
 		AD7BC6F125013FC4004EEC2D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BC6F025013FC4004EEC2D /* Theme.swift */; };
 		AD7BC6F52501444A004EEC2D /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7BC6F42501444A004EEC2D /* Lobster-Regular.ttf */; };
 		AD7BC6F7250148E7004EEC2D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7BC6F6250148E7004EEC2D /* Colors.xcassets */; };
+		AD9BB5202510D70B007DEB41 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB51F2510D70B007DEB41 /* ActivityTableViewCell.swift */; };
+		AD9BB522251117F6007DEB41 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB521251117F6007DEB41 /* HeaderTableViewCell.swift */; };
+		AD9BB52425111E83007DEB41 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB52325111E82007DEB41 /* UITableViewCellExtensions.swift */; };
 		ADC68B7324FD588500A565EF /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7224FD588500A565EF /* TripModel.swift */; };
 		ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7424FD589900A565EF /* TripFunctions.swift */; };
 		ADC68B7724FD5D9300A565EF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC68B7624FD5D9300A565EF /* Data.swift */; };
@@ -25,6 +28,11 @@
 		ADD8714B25022B5B0019D9BB /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD8714A25022B5B0019D9BB /* FloatingActionButton.swift */; };
 		ADD8714D250232130019D9BB /* AddTripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD8714C250232130019D9BB /* AddTripViewController.storyboard */; };
 		ADD87151250260760019D9BB /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD87150250260760019D9BB /* AppUIButton.swift */; };
+		ADDA3DF3250E2F3F00C71FA9 /* TripActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA3DF2250E2F3F00C71FA9 /* TripActivitiesViewController.swift */; };
+		ADDA3DF5250E2F7F00C71FA9 /* TripActivitiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDA3DF4250E2F7F00C71FA9 /* TripActivitiesViewController.storyboard */; };
+		ADDA3DF8250E569100C71FA9 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA3DF7250E569100C71FA9 /* DayModel.swift */; };
+		ADDA3DFC250E592C00C71FA9 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA3DFB250E592C00C71FA9 /* ActivityModel.swift */; };
+		ADDA3DFE250E5A7200C71FA9 /* ActivityTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDA3DFD250E5A7200C71FA9 /* ActivityTypeEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,9 @@
 		AD7BC6F025013FC4004EEC2D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		AD7BC6F42501444A004EEC2D /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		AD7BC6F6250148E7004EEC2D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AD9BB51F2510D70B007DEB41 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		AD9BB521251117F6007DEB41 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AD9BB52325111E82007DEB41 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
 		ADC68B7224FD588500A565EF /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		ADC68B7424FD589900A565EF /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		ADC68B7624FD5D9300A565EF /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -48,6 +59,11 @@
 		ADD8714A25022B5B0019D9BB /* FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		ADD8714C250232130019D9BB /* AddTripViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripViewController.storyboard; sourceTree = "<group>"; };
 		ADD87150250260760019D9BB /* AppUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
+		ADDA3DF2250E2F3F00C71FA9 /* TripActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripActivitiesViewController.swift; sourceTree = "<group>"; };
+		ADDA3DF4250E2F7F00C71FA9 /* TripActivitiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripActivitiesViewController.storyboard; sourceTree = "<group>"; };
+		ADDA3DF7250E569100C71FA9 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		ADDA3DFB250E592C00C71FA9 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		ADDA3DFD250E5A7200C71FA9 /* ActivityTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypeEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,7 @@
 			children = (
 				AD44EEEB2501E759005FD340 /* AddTripViewController */,
 				AD1787F124FFFC20003FBB01 /* TripsViewController */,
+				ADDA3DF1250E2DF500C71FA9 /* TripActivitiesViewController */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				ADC68B7624FD5D9300A565EF /* Data.swift */,
+				ADDA3DF9250E578D00C71FA9 /* Activity */,
+				ADDA3DF6250E565300C71FA9 /* Day */,
 				ADC68B7124FD586300A565EF /* TripModel */,
 			);
 			path = Model;
@@ -155,8 +174,37 @@
 				ADD8714625020D0A0019D9BB /* UIViewExtentions.swift */,
 				ADD8714A25022B5B0019D9BB /* FloatingActionButton.swift */,
 				ADD87150250260760019D9BB /* AppUIButton.swift */,
+				AD9BB52325111E82007DEB41 /* UITableViewCellExtensions.swift */,
 			);
 			path = extentions;
+			sourceTree = "<group>";
+		};
+		ADDA3DF1250E2DF500C71FA9 /* TripActivitiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADDA3DF4250E2F7F00C71FA9 /* TripActivitiesViewController.storyboard */,
+				ADDA3DF2250E2F3F00C71FA9 /* TripActivitiesViewController.swift */,
+				AD9BB521251117F6007DEB41 /* HeaderTableViewCell.swift */,
+				AD9BB51F2510D70B007DEB41 /* ActivityTableViewCell.swift */,
+			);
+			path = TripActivitiesViewController;
+			sourceTree = "<group>";
+		};
+		ADDA3DF6250E565300C71FA9 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				ADDA3DF7250E569100C71FA9 /* DayModel.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		ADDA3DF9250E578D00C71FA9 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				ADDA3DFB250E592C00C71FA9 /* ActivityModel.swift */,
+				ADDA3DFD250E5A7200C71FA9 /* ActivityTypeEnum.swift */,
+			);
+			path = Activity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD8714D250232130019D9BB /* AddTripViewController.storyboard in Resources */,
+				ADDA3DF5250E2F7F00C71FA9 /* TripActivitiesViewController.storyboard in Resources */,
 				AD7BC6F7250148E7004EEC2D /* Colors.xcassets in Resources */,
 				AD5FCE1024F4059E00067B36 /* LaunchScreen.storyboard in Resources */,
 				AD7BC6F52501444A004EEC2D /* Lobster-Regular.ttf in Resources */,
@@ -235,13 +284,20 @@
 			files = (
 				AD7BC6F125013FC4004EEC2D /* Theme.swift in Sources */,
 				ADD8714725020D0A0019D9BB /* UIViewExtentions.swift in Sources */,
+				ADDA3DF8250E569100C71FA9 /* DayModel.swift in Sources */,
 				AD5FCE0424F4059C00067B36 /* AppDelegate.swift in Sources */,
 				ADC68B7724FD5D9300A565EF /* Data.swift in Sources */,
+				ADDA3DFC250E592C00C71FA9 /* ActivityModel.swift in Sources */,
 				AD5FCE0624F4059C00067B36 /* SceneDelegate.swift in Sources */,
 				AD1787F725000076003FBB01 /* TripsViewController.swift in Sources */,
+				AD9BB5202510D70B007DEB41 /* ActivityTableViewCell.swift in Sources */,
 				ADC68B7524FD589900A565EF /* TripFunctions.swift in Sources */,
+				AD9BB522251117F6007DEB41 /* HeaderTableViewCell.swift in Sources */,
+				ADDA3DF3250E2F3F00C71FA9 /* TripActivitiesViewController.swift in Sources */,
+				AD9BB52425111E83007DEB41 /* UITableViewCellExtensions.swift in Sources */,
 				ADD87151250260760019D9BB /* AppUIButton.swift in Sources */,
 				AD44EEEF2501E8CE005FD340 /* AddTripViewController.swift in Sources */,
+				ADDA3DFE250E5A7200C71FA9 /* ActivityTypeEnum.swift in Sources */,
 				ADD0A8B52500490400C4BAFE /* TripsTableViewCell.swift in Sources */,
 				ADD8714B25022B5B0019D9BB /* FloatingActionButton.swift in Sources */,
 				ADC68B7324FD588500A565EF /* TripModel.swift in Sources */,

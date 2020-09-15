@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQ6-Aq-ggh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0I1-Na-Nkd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Trips View Controller-->
+        <!--Trips-->
         <scene sceneID="Ng4-3c-agU">
             <objects>
                 <viewController id="oQ6-Aq-ggh" customClass="TripsViewController" customModule="ItineraryApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="efk-TR-G7b">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="164" id="H1i-ud-MMa" customClass="TripsTableViewCell" customModule="ItineraryApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TripsTableViewCell" rowHeight="164" id="H1i-ud-MMa" customClass="TripsTableViewCell" customModule="ItineraryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H1i-ud-MMa" id="Bjw-30-0dn">
@@ -30,8 +30,9 @@
                                                     <rect key="frame" x="20" y="13" width="374" height="140"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Z5-1uu">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Z5-1uu">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hu-HG-t4u">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
@@ -40,13 +41,8 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.1883464158" green="0.19194230440000001" blue="0.20392349360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="YFp-Z5-1uu" firstAttribute="top" secondItem="MFv-BN-gNY" secondAttribute="top" id="37L-en-QEU"/>
                                                         <constraint firstAttribute="trailing" secondItem="0hu-HG-t4u" secondAttribute="trailing" id="Mab-2m-W1j"/>
-                                                        <constraint firstAttribute="trailing" secondItem="YFp-Z5-1uu" secondAttribute="trailing" id="NW8-wS-gPh"/>
-                                                        <constraint firstAttribute="bottom" secondItem="YFp-Z5-1uu" secondAttribute="bottom" id="ZK8-bZ-vMp"/>
-                                                        <constraint firstItem="YFp-Z5-1uu" firstAttribute="leading" secondItem="MFv-BN-gNY" secondAttribute="leading" id="fzb-BJ-784"/>
                                                         <constraint firstItem="0hu-HG-t4u" firstAttribute="top" secondItem="MFv-BN-gNY" secondAttribute="top" id="hgP-ed-OFa"/>
                                                         <constraint firstItem="0hu-HG-t4u" firstAttribute="leading" secondItem="MFv-BN-gNY" secondAttribute="leading" id="idx-Fs-MZQ"/>
                                                         <constraint firstAttribute="bottom" secondItem="0hu-HG-t4u" secondAttribute="bottom" id="zGy-HF-zEV"/>
@@ -64,13 +60,21 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvo-16-Zgv" customClass="FloatingActionButton" customModule="ItineraryApp" customModuleProvider="target">
-                                <rect key="frame" x="299" y="770" width="71" height="67"/>
+                                <rect key="frame" x="315.5" y="782.5" width="71" height="66.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="icons8-plus-4"/>
                                 <connections>
                                     <segue destination="LXE-by-OXH" kind="presentation" identifier="toAddTripSegue" id="uwl-om-83R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oc-55-E51">
+                                <rect key="frame" x="34" y="805" width="20" height="21.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="questionmark.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="showHelp:" destination="oQ6-Aq-ggh" eventType="touchUpInside" id="QYw-Kx-yla"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,14 +87,68 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="979-Kg-ngO"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Trips" id="vCK-Y2-gw1"/>
                     <connections>
                         <outlet property="addButton" destination="gvo-16-Zgv" id="owe-NE-FLA"/>
+                        <outlet property="helpView" destination="GOS-YE-aTE" id="vdk-kI-GpX"/>
                         <outlet property="tableView" destination="efk-TR-G7b" id="tHw-wk-RRD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCD-m2-mPo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="GOS-YE-aTE">
+                    <rect key="frame" x="0.0" y="0.0" width="407" height="701"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="94b-B3-OWf">
+                        <rect key="frame" x="0.0" y="0.0" width="407" height="701"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="114" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-jP-RaJ">
+                                <rect key="frame" x="18" y="40" width="371" height="455.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe right to delete and left to edit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3Q-zX-ONC">
+                                        <rect key="frame" x="1" y="0.0" width="369.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 1399-06-23 at 00.23.23" translatesAutoresizingMaskIntoConstraints="NO" id="UUH-7z-NqY">
+                                        <rect key="frame" x="0.0" y="141.5" width="371" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="xf0-Gw-w6h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 1399-06-23 at 00.23.43" translatesAutoresizingMaskIntoConstraints="NO" id="lpg-z6-5RI">
+                                        <rect key="frame" x="0.0" y="355.5" width="371" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="AnC-c3-Iei"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rm-D1-TAF" customClass="AppUIButton" customModule="ItineraryApp" customModuleProvider="target">
+                                <rect key="frame" x="18" y="637" width="371" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DeS-g4-1cc"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeVisualEffect:" destination="oQ6-Aq-ggh" eventType="touchUpInside" id="PM4-Ol-LVJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1Rm-D1-TAF" firstAttribute="leading" secondItem="94b-B3-OWf" secondAttribute="leading" constant="18" id="Qja-SA-Cha"/>
+                            <constraint firstAttribute="bottom" secondItem="1Rm-D1-TAF" secondAttribute="bottom" constant="20" symbolic="YES" id="Wl4-4H-z31"/>
+                            <constraint firstItem="oB1-jP-RaJ" firstAttribute="top" secondItem="94b-B3-OWf" secondAttribute="top" constant="40" id="jjC-AG-2k5"/>
+                            <constraint firstItem="oB1-jP-RaJ" firstAttribute="leading" secondItem="94b-B3-OWf" secondAttribute="leading" constant="18" id="pyC-Fx-A6w"/>
+                            <constraint firstAttribute="trailing" secondItem="oB1-jP-RaJ" secondAttribute="trailing" constant="18" id="r2K-We-Pwz"/>
+                            <constraint firstAttribute="trailing" secondItem="1Rm-D1-TAF" secondAttribute="trailing" constant="18" id="xXm-uf-1x1"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
             </objects>
-            <point key="canvasLocation" x="-655.07246376811599" y="-18.080357142857142"/>
+            <point key="canvasLocation" x="255.07246376811597" y="-18.080357142857142"/>
         </scene>
         <!--AddTripViewController-->
         <scene sceneID="MIN-u6-aRL">
@@ -98,10 +156,35 @@
                 <viewControllerPlaceholder storyboardName="AddTripViewController" id="LXE-by-OXH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Sa-xk-URx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66.666666666666671" y="-18.080357142857142"/>
+            <point key="canvasLocation" x="1013.0434782608696" y="-1.3392857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y8M-dC-eBq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0I1-Na-Nkd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="MWl-Cg-rgr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oQ6-Aq-ggh" kind="relationship" relationship="rootViewController" id="m41-Q1-12l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtn-Ze-lgN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655.07246376811599" y="-18.080357142857142"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Tint"/>
     <resources>
+        <image name="Screen Shot 1399-06-23 at 00.23.23" width="634" height="198"/>
+        <image name="Screen Shot 1399-06-23 at 00.23.43" width="638" height="206"/>
         <image name="icons8-plus-4" width="24" height="24"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="Tint">
+            <color red="1" green="0.32800000905990601" blue="0.26499998569488525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

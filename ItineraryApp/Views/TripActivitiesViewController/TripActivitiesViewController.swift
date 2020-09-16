@@ -57,7 +57,41 @@ class TripActivitiesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func addAction(_ sender: AppUIButton) {
+        
+        
+        func handleAddDay(type: UIAlertAction){
+            
+//            let storyboard = UIStoryboard(name: String(describing: AddDayViewController.self), bundle: nil)
+//            let vc = storyboard.instantiateInitialViewController()!
+            let vc = AddDayViewController.getInstance()
+            present(vc, animated: true)
+            
+            
+            
+        }
+        
+        let alert = UIAlertController(title: "New Item", message: "What would you like to add?", preferredStyle: .actionSheet)
+        let day = UIAlertAction(title: "Day", style: .default, handler: handleAddDay)
+        let activity = UIAlertAction(title: "Activity", style: .default)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        // alert.view.tintColor = Theme.tint
+        alert.addAction(cancel)
+        alert.addAction(day)
+        alert.addAction(activity)
+        //video 30:we have to tell it where the user tapped for ipad
+        alert.popoverPresentationController?.sourceView = sender
+        //alert.popoverPresentationController?.sourceRect = sender.bounds
+        // we could also use the iboutlet for button instead of sender 
+        self.present(alert,animated: true)
 
+        
+
+        
+        
+    }
+    
+    
 }
 extension TripActivitiesViewController: UITableViewDataSource,UITableViewDelegate{
     

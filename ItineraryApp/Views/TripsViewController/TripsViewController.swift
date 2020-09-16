@@ -35,7 +35,8 @@ class TripsViewController: UIViewController{
             if Data.tripModels.count > 0{
                 if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
                     self.view.addSubview(self.helpView)
-                    self.helpView.frame = self.view.frame
+                    //TODO: doesnt change anything video 29
+                    self.helpView.frame = self.view.bounds
                   }
                 
             }
@@ -165,10 +166,7 @@ extension TripsViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // String(describing: TripActivitiesViewController.self) its a way of making sure we got the right one and we didn't misspell anything
         let trip = Data.tripModels[indexPath.row]
-        
-        let storyboard = UIStoryboard(name: String(describing: TripActivitiesViewController.self), bundle: nil)
-        
-        let vc  = storyboard.instantiateInitialViewController() as! TripActivitiesViewController
+        let vc  = TripActivitiesViewController.getInstance() as! TripActivitiesViewController
         navigationController?.pushViewController(vc, animated: true)
         
         vc.tripId = trip.id

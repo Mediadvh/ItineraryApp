@@ -135,6 +135,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="icons8-plus-4"/>
+                                <connections>
+                                    <action selector="addAction:" destination="wRx-aJ-w3p" eventType="touchUpInside" id="Yaa-kv-K76"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

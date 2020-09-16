@@ -27,22 +27,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="MFv-BN-gNY">
-                                                    <rect key="frame" x="20" y="13" width="374" height="140"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="20" y="13" width="379" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Z5-1uu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-Z5-1uu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="379" height="140"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hu-HG-t4u">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="379" height="140"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstItem="YFp-Z5-1uu" firstAttribute="leading" secondItem="MFv-BN-gNY" secondAttribute="leading" id="5WD-id-S18"/>
+                                                        <constraint firstItem="YFp-Z5-1uu" firstAttribute="top" secondItem="MFv-BN-gNY" secondAttribute="top" id="Cn3-bs-Hdc"/>
                                                         <constraint firstAttribute="trailing" secondItem="0hu-HG-t4u" secondAttribute="trailing" id="Mab-2m-W1j"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YFp-Z5-1uu" secondAttribute="trailing" id="TQA-h5-Md6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="YFp-Z5-1uu" secondAttribute="bottom" id="d6M-aF-TSB"/>
                                                         <constraint firstItem="0hu-HG-t4u" firstAttribute="top" secondItem="MFv-BN-gNY" secondAttribute="top" id="hgP-ed-OFa"/>
                                                         <constraint firstItem="0hu-HG-t4u" firstAttribute="leading" secondItem="MFv-BN-gNY" secondAttribute="leading" id="idx-Fs-MZQ"/>
                                                         <constraint firstAttribute="bottom" secondItem="0hu-HG-t4u" secondAttribute="bottom" id="zGy-HF-zEV"/>
@@ -60,7 +63,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvo-16-Zgv" customClass="FloatingActionButton" customModule="ItineraryApp" customModuleProvider="target">
-                                <rect key="frame" x="315.5" y="782.5" width="71" height="66.5"/>
+                                <rect key="frame" x="315" y="781.5" width="70.5" height="67.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,7 +151,7 @@
                     <blurEffect style="dark"/>
                 </visualEffectView>
             </objects>
-            <point key="canvasLocation" x="255.07246376811597" y="-18.080357142857142"/>
+            <point key="canvasLocation" x="254.6875" y="-18.1640625"/>
         </scene>
         <!--AddTripViewController-->
         <scene sceneID="MIN-u6-aRL">
